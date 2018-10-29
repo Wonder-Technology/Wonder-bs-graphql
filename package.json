@@ -1,6 +1,6 @@
 {
   "name": "wonder-bs-graphql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "BuckleScript binding for graphql-js",
   "keywords": [
     "BuckleScript",

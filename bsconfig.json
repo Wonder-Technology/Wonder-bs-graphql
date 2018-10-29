@@ -1,5 +1,5 @@
 {
-  "name": "bs-graphql",
+  "name": "wonder-bs-graphql",
   "reason": {
     "react-jsx": 2
   },
@@ -8,6 +8,9 @@
   ],
   "namespace": true,
   "refmt": 3,
+  "package-specs": [
+    "commonjs"
+  ],
   "bs-dev-dependencies": [
     "bs-jest"
   ]
