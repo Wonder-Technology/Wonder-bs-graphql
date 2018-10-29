@@ -1,14 +1,14 @@
 module Language = {
   type location = {
     .
-    line: int,
-    column: int,
+    "line": int,
+    "column": int,
   };
   type source = {
     .
-    body: string,
-    name: string,
-    locationOffset: location,
+    "body": string,
+    "name": string,
+    "locationOffset": location,
   };
   type astNode;
 };
@@ -19,12 +19,12 @@ module Error = {
      */
   type error = {
     .
-    message: string,
-    locations: Js.Nullable.t(Js.Array.t(Language.location)),
-    nodes: Js.Nullable.t(Js.Array.t(Language.astNode)),
-    source: Js.Nullable.t(Language.source),
-    positions: Js.Nullable.t(Js.Array.t(int)),
-    originalError: Js.Nullable.t(Js.Exn.t),
+    "message": string,
+    "locations": Js.Nullable.t(Js.Array.t(Language.location)),
+    "nodes": Js.Nullable.t(Js.Array.t(Language.astNode)),
+    "source": Js.Nullable.t(Language.source),
+    "positions": Js.Nullable.t(Js.Array.t(int)),
+    "originalError": Js.Nullable.t(Js.Exn.t),
   };
 };
 
@@ -37,10 +37,10 @@ module Type = {
   type fieldResolver('source, 'context) =
     {
       .
-      source: 'source,
-      args: Js.Types.obj_val,
-      context: 'context,
-      info: resolveInfo,
+      "source": 'source,
+      "args": Js.Types.obj_val,
+      "context": 'context,
+      "info": resolveInfo,
     } =>
     Js.Types.obj_val;
 };
@@ -51,8 +51,8 @@ module Execution = {
      */
   type executionResult('dataObj) = {
     .
-    data: 'dataObj,
-    errors: Js.Nullable.t(Js.Array.t(Error.error)),
+    "data": 'dataObj,
+    "errors": Js.Nullable.t(Js.Array.t(Error.error)),
   };
 
   /**
