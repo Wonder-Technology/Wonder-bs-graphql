@@ -1,0 +1,14 @@
+{
+  "name": "bs-graphql",
+  "reason": {
+    "react-jsx": 2
+  },
+  "sources": [
+    "src"
+  ],
+  "namespace": true,
+  "refmt": 3,
+  "bs-dev-dependencies": [
+    "bs-jest"
+  ]
+}
